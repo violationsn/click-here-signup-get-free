@@ -1,0 +1,155 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Apply</title>
+  <link href="bootstrap.min.css" rel="stylesheet" />
+  <style>
+    /* CSS styles */
+    body {
+      font-family: system-ui;
+      margin: 0;
+      padding: 0;
+      overflow-x: hidden;
+      /* Prevent horizontal scroll */
+    }
+
+    .container-fluid {
+      display: flex;
+      align-items: stretch;
+      padding: 0;
+      margin: 0;
+      min-height: 100vh;
+      /* Full viewport height */
+      overflow: hidden;
+      /* Prevent overflow and visible scrollbars */
+      flex-direction: column;
+      /* Default column direction for mobile */
+    }
+
+    .form-content {
+      flex: 1;
+      /* Take up remaining space */
+      padding: 2rem;
+      background: white;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      box-shadow: none;
+      /* Remove shadow to blend with the background */
+      position: relative;
+      /* Ensure form content is relative for absolute positioning of elements inside */
+      z-index: 1;
+      /* Place form content above the background image */
+    }
+
+    .form-content img {
+      width: 4rem;
+      height: 4rem;
+      margin-bottom: 1rem;
+    }
+
+    .form-content h1 {
+      font-size: 2rem;
+      margin-bottom: 1rem;
+      text-align: center;
+    }
+
+    .btn {
+      background: #0064e0;
+      border: none;
+      border-radius: 100px;
+      padding: 10px 35px;
+      text-decoration: none;
+      color: white;
+      display: inline-block;
+      margin-top: 1rem;
+      font-family: Arial, sans-serif;
+      font-size: 16px;
+    }
+
+    .form-content p {
+      font-size: 18px;
+      margin-top: 1rem;
+      text-align: center;
+    }
+
+    .form-content .sign-up {
+      font-size: 17px;
+      padding-top: 1rem;
+    }
+
+    .form-content .business-info {
+      font-size: 14px;
+    }
+
+    .form-content .region-info {
+      font-size: 13px;
+      font-style: italic;
+    }
+
+    .image {
+      width: 100%;
+      /* Full width by default */
+      height: 27vh;
+      /* Half viewport height by default */
+      background-image: url('https://cdn.glitch.global/2e5d4c45-5a39-486d-a854-bc6ea9ca8ab2/image.png?v=1725069320098');
+      /* Path to your background image */
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+      border: none;
+      /* Ensure no border */
+      margin: 0;
+      /* Remove margin */
+      padding: 0;
+      /* Remove padding */
+      display: block;
+      /* Ensure image is displayed */
+      flex-shrink: 0;
+      /* Prevent shrinking */
+    }
+
+    @media (min-width: 768px) {
+      .container-fluid {
+        flex-direction: row;
+        /* Row direction for larger screens */
+      }
+
+      .form-content {
+        flex: 1;
+        padding: 2rem;
+      }
+
+      .image {
+        width: 42%;
+        /* Adjust width for larger screens */
+        height: 100vh;
+        /* Full viewport height for larger screens */
+      }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="container-fluid">
+    <div class="image"></div>
+    <div class="form-content">
+      <img src="https://cdn.glitch.global/2e5d4c45-5a39-486d-a854-bc6ea9ca8ab2/blue%20tick.png?v=1725069250606"
+        alt="meta" class="meta-logo" />
+      <h1>Become <br> Meta Verified</h1>
+      <a href="help.html" class="btn">Apply</a>
+      <p>Grow your social presence with Meta Verified – a new subscription
+        <br>bundle available for creators and businesses on Instagram and <br>Facebook.
+      </p>
+      <p class="sign-up">Sign up now for creators</p>
+      <p><span class="fw-semibold">Are you a business?</span> Get more information on</p>
+      <a href="#" class="business-info">Meta support for businesses</a>
+      <p class="region-info">Features, availability, and pricing may vary by region.</p>
+    </div>
+  </div>
+</body>
+
+</html>
